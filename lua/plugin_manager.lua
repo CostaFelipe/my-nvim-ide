@@ -17,6 +17,9 @@ local plugins = {
    'nvim-treesitter/nvim-treesitter',
    build = ':TSUpdate',
  },
+ {
+  'Olical/conjure',
+ },
 }
 
 lazy.setup(plugins)
