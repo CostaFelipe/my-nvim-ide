@@ -1,17 +1,22 @@
-local lazy = require("lazy")
+local lazy = require 'lazy' 
 
-local plugins = { 
- {
+local plugins = {
+  {
+    'folke/tokyonight.nvim',
+    config = function ()
+      vim.cmd 'colorscheme tokyonight-night'
+    end
+  },
+  {
    'nvim-tree/nvim-tree.lua',
    dependencies = {
     'nvim-tree/nvim-web-devicons'  
-   },
-   config = function ()
-     local tree = require 'nvim-tree'
-
-     tree.setup()
-   end
- }
+  }
+ },
+ {
+   'nvim-treesitter/nvim-treesitter',
+   build = ':TSUpdate',
+ },
 }
 
 lazy.setup(plugins)
