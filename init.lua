@@ -4,4 +4,3 @@ require("config.autocmd")
 require("lazy_installer")
 require("plugin_manager")
 
-

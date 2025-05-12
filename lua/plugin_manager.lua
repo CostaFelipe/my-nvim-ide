@@ -10,16 +10,17 @@ local plugins = {
     end
   },
   {
-   'nvim-tree/nvim-tree.lua',
-   dependencies = {
-    'nvim-tree/nvim-web-devicons'  
-  }
- },
- {
-   'nvim-treesitter/nvim-treesitter',
-   build = ':TSUpdate',
- },
-}
+    'nvim-tree/nvim-tree.lua',
+    dependencies = {
+      'nvim-tree/nvim-web-devicons'  
+    }
+  },
+  {
+    'nvim-treesitter/nvim-treesitter',
+    build = ':TSUpdate',
+   },
+ }
+
 
 lazy.setup(plugins)
 
