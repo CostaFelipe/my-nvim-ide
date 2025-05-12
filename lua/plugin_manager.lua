@@ -1,6 +1,8 @@
 local lazy = require 'lazy' 
 
 local plugins = {
+  'windwp/nvim-ts-autotag',
+  'windwp/nvim-autopairs',
   {
     'folke/tokyonight.nvim',
     config = function ()
@@ -16,9 +18,6 @@ local plugins = {
  {
    'nvim-treesitter/nvim-treesitter',
    build = ':TSUpdate',
- },
- {
-  'Olical/conjure',
  },
 }
 
